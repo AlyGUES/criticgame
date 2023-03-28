@@ -1,150 +1,217 @@
 <!DOCTYPE html>
-<html lang=fr dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Black Desert Offline</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  </head>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticgame</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
 
-  <body>
-    <nav class="menu_nav">
-      <ul>
-        <li class="btn_logo">
-          <a href="#"><img src="img/monlogo.png" alt="" width="200px"></a>
-        </li>
-        <li class="btn">
-          <a href="#apropos_link">A propos</a>
-        </li>
-        <li class="btn">
-          <a href="#pve_link">PvE</a>
-        </li>
-        <li class="btn">
-          <a href="#pvp_link">PvP</a>
-        </li>
-        <li class="btn">
-          <a href="#lifeskills_link">Life Skills</a>
-        </li>
-        <li class="btn">
-          <a href="#gameplay_link">Gameplay</a>
-        </li>
-        <li class="btn">
-          <a href="#">Contact</a>
-        </li>
-        <li class="btn_logo">
-          <a href="https://www.naeu.playblackdesert.com/"><img src="img/bdo2.jfif" alt="logo_bdo" width="200">
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="contenu">
-      <div class="a_propos" id="apropos_link">
-        <div class="box_intro">
-          <div class="description">
-              <h1>A propos</h1>
-              <p>Black Desert est un jeu d'action riche en contenus dans lequel 20 millions d'aventuriers vivent des expériences toujours plus immersives et réalistes. C'est un MMORPG à monde ouvert qui ne cesse de proposer de nouveaux contenus pour offrir des voyages pleins de rebondissements.
-                Entrez dès maintenant dans ce monde fantastique où des aventures extraordinaires vous attendent.</p>
+<body>
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid p-0">
+          <img class="navbar-brand logo p-0" src="img/logoo.PNG" href="#" alt="logo-criticgames">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link color-nav" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-nav" href="#">News jeux</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Astuces
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="#">Equipements</a></li>
+                  <li><a class="dropdown-item " href="#">Secrets</a></li>
+                  <li><a class="dropdown-item " href="#">Solutions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-nav" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="recherches" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">OK</button>
+            </form>
           </div>
-            <div class="top_perso">
-              <h1>Notre Top 3 </h1>
-              <div class="personnages">
-                <div class="container">
-                  <img src="img/nova.png" alt="Avatar" class="image" width="300px">
-                  <div class="overlay">
-                    <div class="text">Nova</div>
-                  </div>
-                </div>
-                <div class="container">
-                  <img src="img/corsair.jpg" alt="Avatar" class="image" width="300px">
-                  <div class="overlay">
-                    <div class="text">Corsair</div>
-                  </div>
-                </div>
-                <div class="container">
-                  <img src="img/lahn.jpg" alt="Avatar" class="image" width="300px">
-                  <div class="overlay">
-                    <div class="text">Lahn</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </nav>
+      
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
           </div>
-        <div class="video_presentation">
-          <iframe width="700" height="400" src="https://www.youtube.com/watch?v=DD4zMOvRrzM"></iframe>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
         </div>
       </div>
-    <div class="pve" id="pve_link">
-      <div class="zones_pve">
-        <h1>Zones de pve</h1>
-        <img src="img/pve.jpg" width="600px">
-      </div>
-      <div class="def_pve">
-        <h1>PvE</h1>
-        <p>Joueur contre environnement, ou PvE, est un terme utilisé par la plupart des jeux en ligne qui fait référence au combat contre des ennemis contrôlés par ordinateur, par opposition au PvP (Player versus Player).
-          Dans Black Desert Online, le PvE consiste à vaincre un grand nombre de monstres groupés dans diverses zones dispersées dans l'univers du jeu, ce que l'on appelle le grinding ou farming, et les combats coordonnés contre des monstres de haut niveau appelés boss lorsqu'ils apparaissent dans certaines zones après avoir été annoncés par le système de jeu, entre autres.</p>
-      </div>
-    </div>
-    <div class="pvp" id="pvp_link">
-      <div class="def_pvp">
-        <h1>PvP</h1>
-        <p>Black Desert est un jeu très clairement orienté open PvP. Pas de RvR et de factions présentes donc, mais du GvG, avec la possibilité pour le joueur d'engager n'importe qui, n'importe quand, et n'importe où, à l'exception des "safe zones", typiquement les villes. Le libre arbitre est donc la pierre angulaire du système PvP de BDO, puisqu'il tient à chacun de faire librement ses propres choix, que ce soit dans la défense ou l'attaque, avec les conséquences qui en découlent. Des implications politiques, autant individuelles que collectives, que ce soit dans l'agression d'une personne ou d'un groupe d'une guilde adverse, la défense de son propre spot de farm ou la collaboration à un siège : voilà ce qu'aspire à nous offrir Pearl Abyss dans Black Desert à travers ce système PvP.</p>
-      </div>
-      <div class="video_pvp">
-        <iframe width="700" height="400" src="https://www.youtube.com/embed/X1oFI1So8C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="lifeskills" id="lifeskills_link">
-      <h1>Lifeskills</h1>
-      <div class="skills_carousel">
-        <input type="radio" name="position" checked />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <main id="carousel">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <main>
-      </div>
-    </div>
-    <div class="gameplay" id="gameplay_link">
-      <div class="gameplay_video">
-        <iframe width="700" height="400" src="https://www.youtube.com/embed/52ojdE_t1As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="gameplay_avis">
-        <h1>Gameplay</h1>
-        <p>Pour un MMORPG, ce jeu est le plus beau que nous ayons jamais joué. Les graphismes, les modèles de personnages, les animations et tout ce qui concerne le jeu sont incroyables.
-          Je vous suggère de vous promener dans le vaste monde ouvert du jeu. Parce que c'est si beau ! Même si BDO est un MMORPG, son système de combat donne l'impression d'être un ARPG. Il est très orienté vers l'action et les mécanismes de combat sont vraiment fluides et dynamiques. BDO possède une carte massive que vous pouvez explorer à votre guise. Vous pouvez jouer au jeu pendant des mois, voire des années, et toujours trouver de nouvelles zones que vous n'avez pas vues. Le jeu propose de nombreux personnages différents pour s'adapter au style de jeu de chacun.
-          Le plus intéressant est que Pearl Abyss, les développeurs de BDO, ajoutent régulièrement de nouveaux personnages comme récemment, la corsaire.</p>
-      </div>
-    </div>
-    <div class="contact" id="contact_link">
-        <form action="/ma-page-de-traitement" method="post">
-          <div>
-              <label for="name">Nom :</label>
-              <input type="text" id="name" name="user_name">
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
           </div>
-          <div>
-              <label for="mail">e-mail :</label>
-              <input type="email" id="mail" name="user_mail">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
           </div>
-          <div>
-              <label for="msg">Message :</label>
-              <textarea id="msg" name="user_message"></textarea>
-          </div>
-          <div class="button">
-              <button type="submit">Envoyer le message</button>
-          </div>
-        </form>
+        </div>
       </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+      </div>
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+      </div>
+
+      <div class="progress-circle" data-value="38">
     </div>
-  </body>
-  <footer>
-    &copy; Fishing Shai Corp - All Rights Reserved
-  </footer>
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Company Name © 2018</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
 </html>
