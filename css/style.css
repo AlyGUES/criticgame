@@ -1,3 +1,314 @@
-.red{
-    color: red;
+body{
+  width:100%;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  }
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
+nav.menu_nav ul{
+    justify-content: space-evenly;
+    background-color: #262626;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  nav.menu_nav ul li.btn{
+    list-style-type: ;
+}
+nav.menu_nav ul li.btn a{
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+nav.menu_nav ul li.btn:hover a{
+  opacity: 0.75;
+  background-color: #3a3a3a;
+  transition: 0.3s;
+}
+nav.menu_nav ul li.btn_logo{
+    list-style-type: none;
+}
+nav.menu_nav ul li.btn_logo a{
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+nav.menu_nav ul li.btn_logo:hover a{
+  opacity: 0.5;
+}
+div.contenu{
+  background: url("img/wallpaper.jpg") no-repeat fixed top/cover;
+  width: 100%;
+  margin: 0px;
+}
+div.contenu .a_propos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+h1{
+  font-size: 30px;
+  margin: 10px;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+  color: red;
+}
+p{
+  font-size: 23px;
+  }
+div.contenu .a_propos .box_intro .description{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 50px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: justify;
+  }
+div.contenu .a_propos .box_intro .top_perso{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 50px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+div.contenu .a_propos .box_intro .personnages{
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+div.contenu .a_propos .video_presentation{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 50px;
+  padding: 10px;
+  font-size: 20px;
+}
+div.contenu .pve{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.contenu .zones_pve{
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 50px;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+  }
+div.contenu .pve .def_pve{
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 50px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+div.contenu .pvp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.contenu .pvp .video_pvp{
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 50px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  div.contenu .pvp .def_pvp{
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 100px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: justify;
+  }
+div.contenu .lifeskills{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 10px;
+
+}
+div.skills_carousel {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  justify-content: center;
+  z-index: 1;
+}
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+  }
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background: url("../img/peche.png");
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background: url("../img/dressage.png");
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background: url("../img/cuisine.png");
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background: url("../img/recolte.png");
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background: url("../img/transfo.png");
+}
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+div.contenu .gameplay{
+  display: flex;
+  align-items: center;
+}
+div.contenu .gameplay .gameplay_video{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 50px;
+  padding: 10px;
+  }
+div.contenu .gameplay .gameplay_avis{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 100px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+div.contenu .contact{
+  margin: 6px;
+  padding: 10px;
+}
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form div + div {
+  margin-top: 20px;
+}
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+form input, textarea {
+  font: verdana;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+form input:focus, textarea:focus {
+  border-color: #000;
+}
+form textarea {
+  vertical-align: top;
+  height: 100px;
+}
+div.contact form.button {
+    padding-left: 90px;
+}
+div.contact form.button button {
+  margin-left: 20px;
+}
+footer{
+  text-align: right;
+  }
