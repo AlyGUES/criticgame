@@ -1,7 +1,7 @@
 
 html{
-  margin-left: 13em ;
-  margin-right: 13em ;
+  margin-left: 15em ;
+  margin-right: 15em ;
 }
 
 
@@ -18,8 +18,8 @@ color: white !important;
 
 .container-fluid{
 height: 3em;
-padding-left: 13em !important;
-padding-right: 13em !important;
+padding-left: 15em !important;
+padding-right: 15em !important;
 }
 .nav-link{
 height: 100%;
