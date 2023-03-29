@@ -5,34 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criticgame</title>
+  <meta name="description" content="Découvrez news et critiques du jeux vidéo ici ! ">
+  <link rel="icon" type="img/x-icon" href="img/lo.PNG">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg p-0">
-        <div class="container-fluid p-0">
-          <img class="navbar-brand logo p-0" src="img/logoo.PNG" href="#" alt="logo-criticgames">
+
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="nav-link color-nav"  href="#"><img class="navbar-brand logo" src="img/logoo.PNG" aria-current="page" href="#" alt="logo-criticgames"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link color-nav" aria-current="page" href="#">Acceuil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-nav" href="#">News jeux</a>
-              </li>
+            <ul class="navbar-nav me-auto mb-2">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle color-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Astuces
+                  Jeux
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item " href="#">Equipements</a></li>
-                  <li><a class="dropdown-item " href="#">Secrets</a></li>
-                  <li><a class="dropdown-item " href="#">Solutions</a></li>
+                  <li><a class="dropdown-item " href="#">tests</a></li>
+                  <li><a class="dropdown-item " href="#">solutions</a></li>
+                  <li><a class="dropdown-item " href="#">previews</a></li>
+                  <li><a class="dropdown-item " href="#">sorties</a></li>
                 </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle color-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Actualité
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="#">solde</a></li>
+                    <li><a class="dropdown-item " href="#">culture geek</a></li>
+                    <li><a class="dropdown-item " href="#">astuces</a></li>
+                  </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle color-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Vidéos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item " href="#">à la une</a></li>
+                      <li><a class="dropdown-item " href="#">gaming live</a></li>
+                      <li><a class="dropdown-item " href="#">test</a></li>
+                      <li><a class="dropdown-item " href="#">gameplay</a></li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle color-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Forum
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#">PS5</a></li>
+                        <li><a class="dropdown-item " href="#">PC</a></li>
+                        <li><a class="dropdown-item " href="#">Switch</a></li>
+                      </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link color-nav" href="#">Contact</a>
@@ -45,122 +72,95 @@
           </div>
         </div>
       </nav>
-      
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+    </section>
+  </div>
+
+      <section class="news">
+        <h3> Dernieres news</h3>
+      <div class="card mb-3">
+        <img src="img/zelda.jpg" class="card-img-top" alt="zelda">
+        <div class="card-body">
+          <h5 class="card-title">The Legend of Zelda : Tears of the Kingdom</h5>
+          <p class="card-text">Ça y est, The Legend of Zelda : Tears of the Kingdom dévoile enfin du gameplay en temps réel. L'occasion pour Eiji Aonuma, le producteur historique de la série, de montrer toute l'ambition de la prochaine exclusivité de la Nintendo Switch. Et ça l'air fou. </p>
+          <p class="card-text"><small class="text-body-secondary">Il y a 5 mins</small></p>
         </div>
       </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/hogwarts.jpg" class="card-img-top" alt="hogwarts">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Hogwarts Legacy : le jeu Harry Potter que tout le monde attendait ?</h5>
+              <p class="card-text">La sortie officielle d'Hogwarts Legacy, le jeu en monde ouvert dans l'univers d'Harry Potter, est imminente. Les portes de Poudlard sont sur le point de s'ouvrir et on a pu avoir le droit à une visite en avance. Tout ça pour dire que nous avons testé le jeu et on vous dévoile notre avis en vidéo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/gow.jpg" class="card-img-top" alt="gofofwar">
+            <div class="card-body">
+              <h5 class="card-title">Diablo 4 X God of War : vous pouvez jouer Kratos, la preuve en images !</h5>
+              <p class="card-text">Kratos, le héros de la saga God of War, a déjà fait une apparition dans un certain nombre de productions… Mais on ne s'attendait pas à ce qu'il débarque dans Diablo 4 !</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/re4.jpg" class="card-img-top" alt="re4remake">
+            <div class="card-body">
+              <h5 class="card-title">« La lunette du sniper est inutilisable » Resident Evil 4 Remake prend cher sur PS4 et ce n'est pas un hasard !</h5>
+              <p class="card-text">Dans l’ensemble, les joueurs qui ont fait l’acquisition de Resident Evil 4 sont plus que ravis de leur achat. Le souci, c’est que tout le monde ne dispose pas d’un PC suffisamment performant ou d’une PS5 ou d’une Xbox Series X|S rutilante. Pour les joueurs PlayStation, il y avait toujours la version PS4 mais ce n’est pas le choix le plus judicieux puisqu’elle pose de sérieux problèmes !</p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
+</section>
+     
+<section class="tips">
+  <h3>Dernières astuces</h3>
+<div class="card mb-3">
+  <img src="img/ree4.jpg" class="card-img-top" alt="re4">
+  <div class="card-body">
+    <h5 class="card-title">Pièces hexagonales Resident Evil 4 Remake : comment résoudre l'énigme du piédestal ?</h5>
+    <p class="card-text">Si vous avez commencé à jouer à ce Resident Evil 4 Remake, vous avez sûrement remarqué qu'il est bourré de petites énigmes et c'est justement de l'une d'elles dont nous allons vous parler dans cet article ! Plus précisément, c'est l'énigme du piédestal avec les hexagonales qui va nous intéresser. </p>
+    <p class="card-text"><small class="text-body-secondary">Il y a 5 mins</small></p>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="img/tloy.jpg" class="card-img-top" alt="thelastofus">
+      <div class="card-body">
+        <h5 class="card-title">The Last of Us Part 1 : soluce complète sur PC d'un des meilleurs jeux vidéo de la PS5</h5>
+        <p class="card-text">Vous avez succombé à l’envie de (re)vivre l’histoire aussi bien touchante que troublante d’Ellie et Joel avec le portage PC du remake de The Last of Us Part 1 ? Une telle aventure ne peut pas se faire sans une soluce ! Ainsi, afin de compléter le jeu à 100%, retrouvez dans cet article la solution complète du titre phare de Naughty Dog.</p>
       </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          The current link item
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-      </div>
-
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          The current link item
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-      </div>
-
-      <div class="progress-circle" data-value="38">
     </div>
-
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/hogwarts.jpg" class="card-img-top" alt="hogwart">
+      <div class="card-body">
+        <h5 class="card-title">Hogwarts Legacy : tout ce que vous devez savoir sur l’école de Poudlard avant de commencer le jeu vidéo !</h5>
+        <p class="card-text">Le nouveau jeu d’Avalanche Software arrive bientôt dans vos machines new-gen et PC. Pour vous mettre dans le bain, JV vous propose d’explorer l’histoire de Poudlard dans un JV LORE dédié. Après le visionnage, vous pourrez lancer Hogwarts Legacy en toute connaissance de cause !</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/gt.jpg" class="card-img-top" alt="gt">
+      <div class="card-body">
+        <h5 class="card-title">Gran Turismo : 20 ans plus tard, on découvre un code qui change toute votre évolution dans cet épisode culte de la série</h5>
+        <p class="card-text">Ah, la bonne vieille époque des codes de triche. Cette ère plus ou moins révolue nous renvoie à des générations de machines où des séquences de boutons à la manette débloquaient des surprises particulièrement utiles, sauf dans des jeux sérieux comme Gran Turismo. Du moins… c'est ce qu'on croyait.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
 
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
+        <ul class="pagination justify-content-center">
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
@@ -179,34 +179,32 @@
 
       <div class="footer-clean">
         <footer>
-            <div class="container">
+            <div class="container ">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
+                    <div class="col-sm-4 col-md-3 item ">
                         <h3>Services</h3>
                         <ul>
                             <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Developement</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
+                        <h3>A propos</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
+                            <li><a href="#">Equipe</a></li>
+                            <li><a href="#">Légal</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
+                        <h3>Carieere</h3>
                         <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#">Emplois</a></li>
+                            <li><a href="#">Succes</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Company Name © 2018</p>
+                    <div class="col-lg-3 item social">
+                      <a href="#"><img src="img/instagram.png" class="social" alt="inst"></a><a href="#"><img src="img/linkedin.png" class="social" alt="inst"></a><a href="#"><img src="img/discord.png" class="social" alt="inst"></a>
+                      <p class="copyright">GUESDON Alexandra</p>
                     </div>
                 </div>
             </div>
