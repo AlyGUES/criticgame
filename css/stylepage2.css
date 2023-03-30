@@ -1,152 +1,163 @@
+  .navbar {
+    background-color: #8673CC;
+  }
 
-html{
-    margin-left: 15em ;
-    margin-right: 15em ;
+  .color-nav {
+    color: white !important;
   }
-  .navbar{
-   background-color: #8673CC;
-   height: 4rem !important;
+
+  .nav-item {
+    color: white;
   }
-  .color-nav{
-  color: white !important;
-  }
-  .nav-item{
-      color: white ;
-  }
-  .container-fluid{
-  height: 3em;
-  padding-left: 15em !important;
-  padding-right: 15em !important;
-  }
-  .nav-link{
-  height: 100%;
-  }
+
   .logo {
-      height: 100%;
-      width: 100%;
+    height: 2em;
+    width: 5em;
   }
 
-  #gameplay{
-    margin-top: 5em;
-    display: flex;
-  }
-  .presentation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+  h2,
+  p {
+    font-family: 'Lato', sans-serif;
   }
 
-.image{
- width: 60%;
- height: 20em;
-}
-.container{
-  height: 100%;
-  width: 100;
-  overflow: hidden;
-}
-.zeldaimage{
-  height: 100%;
-  width: 100;
-}
-.article{
-  margin-top: 5em;
-}
-.video{
-  height: 25em;
-  margin-top: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden;
-}
-
-.card-header{
-  color:#fff !important;
-  background-color:#8673CC !important;
-}
-
-.pagination{
-  margin-top: 6em;
-}
-  .social{
-    width:40px;
-    height:40px;
-    margin-top:-10px;
+  h3,h1{
+    font-family: 'Unreal Engine', sans-serif;
   }
-    .footer-clean {
-      padding:50px 0;
-      background-color:#fff;
-      color:#4b4c4d;
+
+  .maRow {
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+
+  .card-header {
+    color: #fff !important;
+    background-color: #8673CC !important;
+  }
+
+  .imageZelda {
+
+    background-image: url("../img/zelda.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width : 400px) {
+    .videorow {
+      flex-direction: column;
     }
-    .footer-clean h3 {
-      margin-top:0;
-      margin-bottom:12px;
-      font-weight:bold;
-      font-size:16px;
+
+    .vid {
+      height: 50vh
     }
-    .footer-clean ul {
-      padding:0;
-      list-style:none;
-      line-height:1.6;
-      font-size:14px;
-      margin-bottom:0;
+  }
+
+  @media screen and (max-width : 400px) {
+    .maRow {
+      flex-direction: column;
     }
-    .footer-clean ul a {
-      color:inherit;
-      text-decoration:none;
-      opacity:0.8;
+
+    .imageZelda {
+      height: 100vh
     }
-    .footer-clean ul a:hover {
-      opacity:1;
+  }
+  .see{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .spart{
+    padding-bottom: 3em;
+  }
+  .social {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+  }
+
+  .footer-clean {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #4b4c4d;
+  }
+
+  .footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  .footer-clean ul a:hover {
+    opacity: 1;
+  }
+
+  .footer-clean .item.social {
+    text-align: right;
+  }
+
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align: center;
+      padding-bottom: 20px;
     }
+  }
+
+  @media (max-width: 768px) {
     .footer-clean .item.social {
-      text-align:right;
+      text-align: center;
     }
-    @media (max-width:767px) {
-      .footer-clean .item {
-        text-align:center;
-        padding-bottom:20px;
-      }
+  }
+
+  .footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .footer-clean .item.social>a:hover {
+    opacity: 0.9;
+  }
+
+  @media (max-width:991px) {
+    .footer-clean .item.social>a {
+      margin-top: 40px;
     }
-    @media (max-width: 768px) {
-      .footer-clean .item.social {
-        text-align:center;
-      }
+  }
+
+  @media (max-width:767px) {
+    .footer-clean .item.social>a {
+      margin-top: 10px;
     }
-    .footer-clean .item.social > a {
-      font-size:24px;
-      width:40px;
-      height:40px;
-      line-height:40px;
-      display:inline-block;
-      text-align:center;
-      border-radius:50%;
-      border:1px solid #ccc;
-      margin-left:10px;
-      margin-top:22px;
-      color:inherit;
-      opacity:0.75;
-    }
-    .footer-clean .item.social > a:hover {
-      opacity:0.9;
-    }
-    @media (max-width:991px) {
-      .footer-clean .item.social > a {
-        margin-top:40px;
-      }
-    }
-    @media (max-width:767px) {
-      .footer-clean .item.social > a {
-        margin-top:10px;
-      }
-    }
-    .footer-clean .copyright {
-      margin-top:14px;
-      margin-bottom:0;
-      font-size:13px;
-      opacity:0.6;
-    }
-    
+  }
+
+  .footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+  }
+
+ 

@@ -1,39 +1,25 @@
 
-html{
-  margin-left: 15em ;
-  margin-right: 15em ;
-}
-
-
 .navbar{
- background-color: #8673CC;
- height: 4rem !important;
-}
+ background-color: #8673CC;}
 .color-nav{
 color: white !important;
 }
 .nav-item{
     color: white ;
 }
-
-.container-fluid{
-height: 3em;
-padding-left: 15em !important;
-padding-right: 15em !important;
-}
-.nav-link{
-height: 100%;
-}
 .logo {
-    height: 100%;
-    width: 100%;
+    height: 2em;
+    width: 5em;
 }
-
-
+.card-img-bot{
+  height: 15em;
+}
+.card-img-top{
+  height: 40em;
+}
 .news{
   margin-top: 5em;
 }
-
 .social{
   width:40px;
   height:40px;
