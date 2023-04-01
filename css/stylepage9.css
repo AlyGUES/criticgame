@@ -23,7 +23,6 @@ p {
 h3,h1{
   font-family: 'Unreal Engine', sans-serif;
 }
-
 .list-group{
   list-style: none;
 }
@@ -37,8 +36,8 @@ h3,h1{
   background-color: #8673CC !important;
 }
 
-.imageGow {
-background-image: url("../img/gow.jpg");
+.imageRe {
+background-image: url("../img/gt.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,7 +58,7 @@ background-image: url("../img/gow.jpg");
     flex-direction: column;
   }
 
-  .imageZelda {
+  .imageRe {
     height: 100vh
   }
 }

@@ -24,6 +24,9 @@ h3,h1{
   font-family: 'Unreal Engine', sans-serif;
 }
 
+.list-group{
+  list-style: none;
+}
 .maRow {
   padding-top: 5em;
   padding-bottom: 3em;
