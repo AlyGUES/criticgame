@@ -2,6 +2,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/*body*/
+body{
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 
 * {
   box-sizing: border-box;
@@ -60,6 +68,7 @@ input[type=submit]:hover {
 }
 
 /*footer*/
+/*footer*/
 .social {
   width: 40px;
   height: 40px;
@@ -67,6 +76,8 @@ input[type=submit]:hover {
 }
 
 .footer-clean {
+  margin-top: 13em;
+  padding: 50px 0;
   background-color: #fff;
   color: #4b4c4d;
 }
